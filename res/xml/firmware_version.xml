@@ -18,47 +18,54 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/firmware_version"
+    android:title="@string/firmware_information"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- Arrow logo -->
+    <!-- Firmware Header -->
     <com.android.settingslib.widget.LayoutPreference
-        android:key="arrow_logo"
-        android:layout="@layout/arrow_logo"
+        android:key="firmware_header"
+        android:layout="@layout/firmware_header_layout"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.controller.FirmwareHeaderPreferenceController"
         android:selectable="false"/>
 
-    <!-- Android version
-    <Preference
-        android:key="os_firmware_version"
-        android:title="@string/firmware_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:searchable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>-->
+    <PreferenceCategory
+        android:key="firmware_version_category"
+        android:selectable="false"
+        android:title="@string/firmware_version_category_title">    
 
-    <!-- Arrow version -->
-    <Preference
-        android:key="arrow_version"
-        android:title="@string/arrow_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:searchable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.ArrowVersionDetailPreferenceController"/>
+        <!-- Arrow version -->
+        <Preference
+            android:key="arrow_version"
+            android:title="@string/arrow_version"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"
+            settings:searchable="false"
+            settings:layout="@layout/card_preference_top"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.ArrowVersionDetailPreferenceController"/>
 
-    <!-- Device name -->
-    <Preference
-        android:key="about_device_name"
-        android:title="@string/about_device_name"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
+        <!-- Device name -->
+        <Preference
+            android:key="about_device_name"
+            android:title="@string/about_device_name"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"
+            settings:layout="@layout/card_preference_bottom"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.AboutDeviceNamePreferenceController"/>
+    </PreferenceCategory>
 
-    <!-- Security patch -->
-    <Preference
-        android:key="security_key"
-        android:title="@string/security_patch"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
+    <PreferenceCategory
+        android:key="firmware_security_category"
+        android:selectable="false"
+        android:title="@string/firmware_security_category_title">        
+
+        <!-- Security patch -->
+        <Preference
+            android:key="security_key"
+            android:title="@string/security_patch"
+            settings:enableCopying="true"
+            settings:layout="@layout/card_preference_single"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
+    </PreferenceCategory>        
 
     <!-- Mainline module version
     <Preference
@@ -68,38 +75,46 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/ -->
 
-    <!-- Baseband -->
-    <Preference
-        android:key="base_band"
-        android:title="@string/baseband_version"
-        android:summary="@string/summary_placeholder"
+    <PreferenceCategory
+        android:key="firmware_general_category"
         android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
+        android:title="@string/firmware_general_category_title">
 
-    <!-- Kernel -->
-    <Preference
-        android:key="kernel_version"
-        android:title="@string/kernel_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
+        <!-- Baseband -->
+        <Preference
+            android:key="base_band"
+            android:title="@string/baseband_version"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"
+            settings:layout="@layout/card_preference_top"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
 
-    <!-- Build -->
-    <Preference
-        android:key="os_build_date"
-        android:title="@string/build_date"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
+        <!-- Kernel -->
+        <Preference
+            android:key="kernel_version"
+            android:title="@string/kernel_version"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"
+            settings:layout="@layout/card_preference_middle"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
 
+        <!-- Build -->
+        <Preference
+            android:key="os_build_date"
+            android:title="@string/build_date"
+            android:summary="@string/summary_placeholder"
+            settings:enableCopying="true"
+            settings:layout="@layout/card_preference_bottom"
+            settings:controller="com.android.settings.deviceinfo.firmwareversion.BuildDatePreferenceController"/>
+    </PreferenceCategory>        
+
+    <!-- Build Number
     <Preference
         android:key="os_build_number"
         android:title="@string/build_number"
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/> -->
 
 </PreferenceScreen>

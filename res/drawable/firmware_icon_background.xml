@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2023 ArrowOS-T
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+		android:width="50.0dp"
+		android:height="50.0dp"
+		android:viewportWidth="50.0"
+		android:viewportHeight="50.0">
+	<path
+		android:fillColor="@color/accent_alpha"
+		android:strokeLineJoin="miter"
+		android:fillType="nonZero"
+		android:strokeLineCap="square"
+		android:pathData="M26.07,2.98C28.87,1.86,31.67,0.74,35.46,1.28C39.25,1.81,44.03,3.98,45.35,9.13C46.66,14.27,44.51,22.37,41.72,28.02C38.93,33.68,35.51,36.87,31.39,40.33C27.28,43.79,22.48,47.51,18.04,48.50C13.60,49.48,9.52,47.73,6.84,43.67C4.15,39.62,2.86,33.25,3.64,27.85C4.42,22.45,7.28,18.02,9.87,14.68C12.46,11.34,14.78,9.08,17.44,7.31C20.09,5.54,23.08,4.26,26.07,2.98z"/>
+	<path
+		android:fillColor="@color/accent_alpha"
+		android:strokeLineJoin="miter"
+		android:fillType="nonZero"
+		android:strokeLineCap="square"
+		android:pathData="M5.07,14.28C4.35,12.19,3.63,10.10,4.44,8.11C5.26,6.13,7.60,4.25,10.81,3.35C14.02,2.45,18.10,2.53,22.55,3.78C27.01,5.03,31.84,7.45,35.33,9.93C38.83,12.41,40.98,14.94,42.79,18.16C44.59,21.38,46.04,25.29,46.46,29.13C46.88,32.97,46.28,36.75,44.62,40.22C42.96,43.69,40.25,46.85,36.54,48.15C32.83,49.44,28.12,48.87,24.58,47.26C21.04,45.64,18.68,42.98,17.84,39.93C17.01,36.88,17.70,33.44,17.15,30.92C16.60,28.39,14.81,26.78,12.80,24.73C10.79,22.69,8.57,20.21,7.25,18.40C5.92,16.58,5.50,15.43,5.07,14.28z"/>
+	<path
+		android:fillColor="#00FFFFFF"
+		android:strokeColor="#FFFFFFFF"
+		android:strokeWidth="1.25"
+		android:strokeLineJoin="miter"
+		android:fillType="nonZero"
+		android:strokeLineCap="square"
+		android:pathData="M17.19,5.21L32.81,5.21A2.60 2.60 0 0 1 35.42,7.81L35.42,42.19A2.60 2.60 0 0 1 32.81,44.79L17.19,44.79A2.60 2.60 0 0 1 14.58,42.19L14.58,7.81A2.60 2.60 0 0 1 17.19,5.21z"/>
+</vector>
