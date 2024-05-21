@@ -21,10 +21,10 @@
             <solid
                 android:color="#ffffffff" />
             <corners
-                android:topLeftRadius="0.0dip"
-                android:topRightRadius="0.0dip"
-                android:bottomLeftRadius="0.0dip"
-                android:bottomRightRadius="0.0dip" />
+                android:topLeftRadius="2.0dip"
+                android:topRightRadius="2.0dip"
+                android:bottomLeftRadius="2.0dip"
+                android:bottomRightRadius="2.0dip" />
         </shape>
     </item>
     <item
@@ -34,10 +34,10 @@
             <solid
                 android:color="@color/preference_card_background" />
             <corners
-                android:topLeftRadius="0.0dip"
-                android:topRightRadius="0.0dip"
-                android:bottomLeftRadius="0.0dip"
-                android:bottomRightRadius="0.0dip" />
+                android:topLeftRadius="2.0dip"
+                android:topRightRadius="2.0dip"
+                android:bottomLeftRadius="2.0dip"
+                android:bottomRightRadius="2.0dip" />
         </shape>
     </item>
 </ripple>

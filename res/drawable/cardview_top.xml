@@ -23,8 +23,8 @@
             <corners
                 android:topLeftRadius="18.0dip"
                 android:topRightRadius="18.0dip"
-                android:bottomLeftRadius="0.0dip"
-                android:bottomRightRadius="0.0dip" />
+                android:bottomLeftRadius="2.0dip"
+                android:bottomRightRadius="2.0dip" />
         </shape>
     </item>
     <item
@@ -36,8 +36,8 @@
             <corners
                 android:topLeftRadius="18.0dip"
                 android:topRightRadius="18.0dip"
-                android:bottomLeftRadius="0.0dip"
-                android:bottomRightRadius="0.0dip" />
+                android:bottomLeftRadius="2.0dip"
+                android:bottomRightRadius="2.0dip" />
         </shape>
     </item>
 </ripple>

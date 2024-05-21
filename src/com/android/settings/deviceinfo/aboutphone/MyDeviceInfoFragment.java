@@ -51,6 +51,11 @@ import com.android.settingslib.widget.LayoutPreference;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
+
+import com.android.settings.preferences.ui.mtxInfoPreferenceController;
+
 @SearchIndexable
 public class MyDeviceInfoFragment extends DashboardFragment
         implements DeviceNamePreferenceController.DeviceNamePreferenceHost {
@@ -113,6 +118,7 @@ public class MyDeviceInfoFragment extends DashboardFragment
         controllers.add(new FeedbackPreferenceController(fragment, context));
         controllers.add(new FccEquipmentIdPreferenceController(context));
         controllers.add(new UptimePreferenceController(context, lifecycle));
+        controllers.add(new mtxInfoPreferenceController(context));
         return controllers;
     }
 
