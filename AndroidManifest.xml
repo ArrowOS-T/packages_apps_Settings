@@ -4661,6 +4661,87 @@
                        android:value="true" />
         </activity>
 
+        <!-- About Settings -->
+        <activity android:name="Settings$SharpenerAboutActivity"
+                  android:label="@string/sharpener_about_title"
+                  android:icon="@drawable/ic_sharpener_about"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.arrow.support.fragments.AboutSettings" />
+        </activity>
+
+        <!-- Button Settings -->
+        <activity android:name="Settings$SharpenerButtonsActivity"
+                  android:label="@string/sharpener_buttons_title"
+                  android:icon="@drawable/ic_sharpener_buttons"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.arrow.support.fragments.ButtonsSettings" />
+        </activity>
+
+        <!-- LockScreen Settings -->
+        <activity android:name="Settings$SharpenerLockScreenActivity"
+                  android:label="@string/sharpener_lockscreen_title"
+                  android:icon="@drawable/ic_sharpener_lockscreen"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.arrow.support.fragments.LockScreenSettings" />
+        </activity>
+
+        <!-- Misc Settings -->
+        <activity android:name="Settings$SharpenerMiscActivity"
+                  android:label="@string/sharpener_misc_title"
+                  android:icon="@drawable/ic_sharpener_misc"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.arrow.support.fragments.MiscSettings" />
+        </activity>
+
+        <!-- Notification Settings -->
+        <activity android:name="Settings$SharpenerNotificationActivity"
+                  android:label="@string/sharpener_notifications_title"
+                  android:icon="@drawable/ic_sharpener_notifications"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.arrow.support.fragments.NotificationSettings" />
+        </activity>
+
+        <!-- Quick Settings -->
+        <activity android:name="Settings$SharpenerQuickSettingsActivity"
+                  android:label="@string/sharpener_quicksettings_title"
+                  android:icon="@drawable/ic_sharpener_quicksettings"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.arrow.support.fragments.QuickSettings" />
+        </activity>
+
+        <!-- StatusBar Settings -->
+        <activity android:name="Settings$SharpenerStatusBarActivity"
+                  android:label="@string/sharpener_statusbar_title"
+                  android:icon="@drawable/ic_sharpener_statusbar"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.arrow.support.fragments.StatusBarSettings" />
+        </activity>
+
+        <!-- Themes Settings -->
+        <activity android:name="Settings$SharpenerThemesActivity"
+                  android:label="@string/sharpener_themes_title"
+                  android:icon="@drawable/ic_sharpener_themes"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.arrow.support.fragments.ThemesSettings" />
+        </activity>
+
+        <!-- Gesture Settings -->
+        <activity android:name="Settings$SettingsGestureActivity"
+                  android:label="@string/sharpener_gestures_title"
+                  android:icon="@drawable/ic_sharpener_gestures"
+                  android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                       android:value="com.android.settings.gestures.GestureSettings" />
+        </activity>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>

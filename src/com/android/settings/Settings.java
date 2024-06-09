@@ -457,4 +457,22 @@ public class Settings extends SettingsActivity {
 
     // Sharpener Addition
     public static class SharpenerActivity extends SettingsActivity {}
+
+    public static class SharpenerAboutActivity extends SettingsActivity {}
+
+    public static class SharpenerButtonsActivity extends SettingsActivity {}
+
+    public static class SharpenerLockScreenActivity extends SettingsActivity {}
+
+    public static class SharpenerMiscActivity extends SettingsActivity {}
+
+    public static class SharpenerNotificationActivity extends SettingsActivity {}
+
+    public static class SharpenerQuickSettingsActivity extends SettingsActivity {}
+
+    public static class SharpenerStatusBarActivity extends SettingsActivity {}
+
+    public static class SharpenerThemesActivity extends SettingsActivity {}
+
+    public static class SettingsGestureActivity extends SettingsActivity {}
 }

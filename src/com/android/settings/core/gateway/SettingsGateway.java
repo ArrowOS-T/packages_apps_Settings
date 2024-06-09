@@ -109,6 +109,7 @@ import com.android.settings.gestures.DoubleTapPowerSettings;
 import com.android.settings.gestures.DoubleTapScreenSettings;
 import com.android.settings.gestures.DoubleTwistGestureSettings;
 import com.android.settings.gestures.GestureNavigationSettingsFragment;
+import com.android.settings.gestures.GestureSettings;
 import com.android.settings.gestures.OneHandedSettings;
 import com.android.settings.gestures.PickupGestureSettings;
 import com.android.settings.gestures.PowerMenuSettings;
@@ -182,6 +183,14 @@ import com.android.settings.wifi.tether.WifiTetherClientManager;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.arrow.support.Sharpener;
+import com.arrow.support.fragments.AboutSettings;
+import com.arrow.support.fragments.ButtonsSettings;
+import com.arrow.support.fragments.LockScreenSettings;
+import com.arrow.support.fragments.MiscSettings;
+import com.arrow.support.fragments.NotificationSettings;
+import com.arrow.support.fragments.QuickSettings;
+import com.arrow.support.fragments.StatusBarSettings;
+import com.arrow.support.fragments.ThemesSettings;
 
 public class SettingsGateway {
 
@@ -337,6 +346,7 @@ public class SettingsGateway {
             DarkModeSettingsFragment.class.getName(),
             BugReportHandlerPicker.class.getName(),
             GestureNavigationSettingsFragment.class.getName(),
+            GestureSettings.class.getName(),
             ButtonNavigationSettingsFragment.class.getName(),
             InteractAcrossProfilesSettings.class.getName(),
             InteractAcrossProfilesDetails.class.getName(),
@@ -351,7 +361,15 @@ public class SettingsGateway {
             AppLocaleDetails.class.getName(),
             TurnScreenOnSettings.class.getName(),
             WifiTetherClientManager.class.getName(),
-            Sharpener.class.getName()
+            Sharpener.class.getName(),
+            AboutSettings.class.getName(),
+            ButtonsSettings.class.getName(),
+            LockScreenSettings.class.getName(),
+            MiscSettings.class.getName(),
+            NotificationSettings.class.getName(),
+            QuickSettings.class.getName(),
+            StatusBarSettings.class.getName(),
+            ThemesSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -395,5 +413,14 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.SharpenerActivity.class.getName(),
+            Settings.SharpenerAboutActivity.class.getName(),
+            Settings.SharpenerButtonsActivity.class.getName(),
+            Settings.SharpenerLockScreenActivity.class.getName(),
+            Settings.SharpenerMiscActivity.class.getName(),
+            Settings.SharpenerNotificationActivity.class.getName(),
+            Settings.SharpenerQuickSettingsActivity.class.getName(),
+            Settings.SharpenerStatusBarActivity.class.getName(),
+            Settings.SharpenerThemesActivity.class.getName(),
+            Settings.SettingsGestureActivity.class.getName()
     };
 }
