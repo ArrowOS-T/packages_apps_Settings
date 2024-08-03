@@ -21,11 +21,9 @@ import static android.app.NotificationManager.IMPORTANCE_HIGH;
 
 import android.app.NotificationChannel;
 import android.content.Context;
-import android.provider.Settings;
 
 import androidx.preference.Preference;
 
-import com.android.settings.R;
 import com.android.settings.core.PreferenceControllerMixin;
 import com.android.settings.notification.NotificationBackend;
 import com.android.settingslib.RestrictedSwitchPreference;
@@ -70,20 +68,11 @@ public class HighImportancePreferenceController extends NotificationPreferenceCo
     @Override
     public void updateState(Preference preference) {
         if (mAppRow != null && mChannel != null) {
-            preference.setEnabled(isGlobalHeadsUpEnabled() && mAdmin == null
-                    && isChannelConfigurable(mChannel));
+            preference.setEnabled(mAdmin == null && isChannelConfigurable(mChannel));
 
             RestrictedSwitchPreference pref = (RestrictedSwitchPreference) preference;
             pref.setChecked(mChannel.getImportance() >= IMPORTANCE_HIGH);
-            refreshSummary(preference);
         }
-    }
-
-    @Override
-    public CharSequence getSummary() {
-        return mContext.getString(isGlobalHeadsUpEnabled()
-                ? R.string.notification_channel_summary_high
-                : R.string.heads_up_off);
     }
 
     @Override
@@ -97,11 +86,5 @@ public class HighImportancePreferenceController extends NotificationPreferenceCo
             mDependentFieldListener.onFieldValueChanged();
         }
         return true;
-    }
-
-    private boolean isGlobalHeadsUpEnabled() {
-        return Settings.Global.getInt(mContext.getContentResolver(),
-                Settings.Global.HEADS_UP_NOTIFICATIONS_ENABLED,
-                Settings.Global.HEADS_UP_OFF) == Settings.Global.HEADS_UP_ON;
     }
 }
