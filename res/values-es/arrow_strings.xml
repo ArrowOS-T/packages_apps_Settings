@@ -146,4 +146,31 @@
     <string name="wake_when_plugged_or_unplugged_summary">Encender la pantalla al conectar o desconecta el cargador</string>
     <string name="smart_5g_title">5G inteligente</string>
     <string name="smart_5g_summary">Cambia automáticamente entre 5G y 4G para reducir el consumo de batería</string>
+
+    <string name="android_version">Android</string>
+<string name="device_maintainer">Mantenedor</string>
+<string name="firmware_version_category_title">Versión del Firmware</string>
+<string name="firmware_security_category_title">Seguridad del Firmware</string>
+<string name="firmware_general_category_title">General del Firmware</string>
+<string name="firmware_information">Información del Firmware</string>
+
+<!-- Sharpener -->
+<string name="sharpener_title">Afilador</string>
+<string name="sharpener_summary">¡Ven aquí y afila tus flechas!</string>
+
+<!-- Per-app volume control -->
+<string name="app_volume">Volumen de la App</string>
+<string name="app_volume_title">Control de volumen por aplicación</string>
+<string name="app_volume_summary">Permite establecer diferentes niveles de volumen para cada aplicación</string>
+
+<!-- Game Space -->
+<string name="game_space_title">Espacio de Juego</string>
+<string name="game_space_summary">Mejora tu experiencia de juego</string>
+
+<!-- Back gesture height -->
+<string name="back_height_low_label">Completo</string>
+<string name="back_height_high_label">Parte Inferior</string>
+<string name="back_height_title">Altura del gesto de retroceso</string>
+<string name="back_height_summary">Altura de pantalla válida para el gesto de retroceso</string>
+
 </resources>
