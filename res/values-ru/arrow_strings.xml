@@ -148,4 +148,31 @@
     <string name="wake_when_plugged_or_unplugged_summary">Turn the screen on when connecting or disconnecting a power source</string>
     <string name="smart_5g_title">Smart 5G</string>
     <string name="smart_5g_summary">Automatically switch between 5G and 4G to reduce battery consumption</string>
+
+    <string name="android_version">Андроид</string>
+<string name="device_maintainer">Мейнтейнер</string>
+<string name="firmware_version_category_title">Версия прошивки</string>
+<string name="firmware_security_category_title">Безопасность прошивки</string>
+<string name="firmware_general_category_title">Общая прошивка</string>
+<string name="firmware_information">Информация о прошивке</string>
+
+<!-- Sharpener -->
+<string name="sharpener_title">Точилка</string>
+<string name="sharpener_summary">Приходи сюда и точи свои стрелы!</string>
+
+<!-- Per-app volume control -->
+<string name="app_volume">Громкость приложения</string>
+<string name="app_volume_title">Контроль громкости для каждого приложения</string>
+<string name="app_volume_summary">Позволяет установить разные уровни громкости для каждого приложения</string>
+
+<!-- Game Space -->
+<string name="game_space_title">Игровое пространство</string>
+<string name="game_space_summary">Улучшите свои игровые впечатления</string>
+
+<!-- Back gesture height -->
+<string name="back_height_low_label">Полный</string>
+<string name="back_height_high_label">Нижняя часть</string>
+<string name="back_height_title">Высота жеста назад</string>
+<string name="back_height_summary">Высота экрана для жеста назад</string>
+
 </resources>
